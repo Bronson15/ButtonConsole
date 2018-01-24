@@ -9,4 +9,4 @@
 * Once all four numbers are set, the passcode will be accepted and you will see the Klubhouse button.
 
 
-Created by Bronson Lane 2017 for KidStuf
+Created by Bronson Lane in 2017 for KidStuf

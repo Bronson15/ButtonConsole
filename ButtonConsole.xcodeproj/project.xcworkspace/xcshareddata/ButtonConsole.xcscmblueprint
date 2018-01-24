@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1DF8C498677BF4E7892EF60C8EC873719B340BE0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1DF8C498677BF4E7892EF60C8EC873719B340BE0" : 9223372036854775807,
+    "82F2AB19737D787C1B73832790E4CC96242E0DF9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BE0710D1-A6C2-459D-8F46-F2915A83232E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1DF8C498677BF4E7892EF60C8EC873719B340BE0" : "ButtonConsole_Keypad\/",
+    "82F2AB19737D787C1B73832790E4CC96242E0DF9" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ButtonConsole",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ButtonConsole.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bronson15\/StartButton.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DF8C498677BF4E7892EF60C8EC873719B340BE0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Bronson15\/StartButton.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82F2AB19737D787C1B73832790E4CC96242E0DF9"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
     var imageview = UIImageView()
     
+    //delcaring our code as a String and the array of our input characters
     var code = String()
     var codeArray: [String] {
         return code.characters.map({ (character) -> String in
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     var labelArray: [UILabel] = Array()
     var currentChar = 0
     
+    //audio file declaration
     var correct = URL(fileURLWithPath: Bundle.main.path(forResource: "correct", ofType: "mp3")!)
     var wrong = URL(fileURLWithPath: Bundle.main.path(forResource: "wrong2", ofType: "mp3")!)
     var complete = URL(fileURLWithPath: Bundle.main.path(forResource: "complete", ofType: "mp3")!)
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
             print(error)
         }
         
+        //loads up our audioPlayers 
         correctAudioPlayer.prepareToPlay()
         wrongAudioPlayer.prepareToPlay()
         completeAudioPlayer.prepareToPlay()
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
         print(codeArray)
     }
     
+    //shows the admin the Enter Passcode screen
     func showCodeAlert() {
         let alert = UIAlertController(title: "Enter Passcode", message: "", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Submit", style: UIAlertActionStyle.default, handler: codeEntered))
@@ -89,16 +93,19 @@ class ViewController: UIViewController {
         
     }
     
+    //checks the inputted number vs the correct current number
     func numberCheck(_ input: String) -> Bool {
         return input == codeArray[currentChar]
     }
     
+    //if the number is wrong, display a red border and play the wrongAudio
     func wrongNumber() {
         labelArray[currentChar].layer.borderColor = UIColor.red.cgColor
         labelArray[currentChar].layer.borderWidth = 10.0
         wrongAudioPlayer.play()
     }
     
+    //if the number is correct, display the number with a green border and play the correctAudio
     func rightNumber() {
         labelArray[currentChar].text = input
         labelArray[currentChar].layer.borderColor = UIColor.green.cgColor
@@ -108,10 +115,13 @@ class ViewController: UIViewController {
         }
     }
     
+    //check the entire code
     func checkCode() -> Bool {
         return currentChar == code.characters.count
     }
     
+    //function to check the current iteration of the code
+    //if the code is complete, play the completeAudio and show the KidStuf Klubhouse
     func checkInput(_ input: String) {
         labelArray = [self.first, self.second, self.third, self.fourth]
         
@@ -141,6 +151,7 @@ class ViewController: UIViewController {
         
     }
     
+    //buttons for the numpad
     @IBAction func oneButton() {
         input = "1"
         checkInput(input)
